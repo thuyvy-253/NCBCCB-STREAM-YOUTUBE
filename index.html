@@ -6,64 +6,84 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
 body{
+body{
   font-family: Arial, Helvetica, sans-serif;
-  background:#0f0f0f;
-  color:#f2f2f2;
+  background:#fff8e1; /* 🌕 vàng nhạt */
+  color:#2b2b2b;
   margin:0;
   line-height:1.8;
 }
+
 header{
-  background:linear-gradient(135deg,#0d47a1,#1565c0);
+  background:linear-gradient(135deg,#f9a825,#fbc02d); /* vàng đậm */
   padding:40px 20px;
   text-align:center;
+  color:#1a1a1a;
 }
 .logo{
-  width:140px;
-  height:140px;
-  margin:auto;
-  border-radius:50%;
-  background:#0f0f0f;
-  padding:10px;
+  width:120px;      /* giữ logo nhỏ */
+  height:120px;
+  margin:0 auto 12px;
 }
+
 .logo img{
   width:100%;
-  border-radius:50%;
+  height:auto;
+  display:block;
 }
-header h1{margin:15px 0 0;font-size:30px;}
-header p{margin-top:8px;font-size:14px;opacity:.9;}
+
 .container{
   max-width:1100px;
   margin:auto;
   padding:28px;
+  background:#fffdf5;
 }
+
 h2{
-  color:#90caf9;
+  color:#f57f17;
   margin-top:52px;
-  border-left:5px solid #42a5f5;
+  border-left:5px solid #f9a825;
   padding-left:12px;
 }
-ul{padding-left:24px;}
-li{margin-bottom:10px;}
+
+h3{
+  color:#ef6c00;
+  margin-top:36px;
+}
+
 .note{
-  background:#1c1c1c;
-  border-left:5px solid #42a5f5;
+  background:#fff3cd;
+  border-left:5px solid #fbc02d;
   padding:18px;
   margin:28px 0;
+  color:#3e2f00;
 }
+
 .warning{
-  background:#2a0008;
-  border-left:5px solid #ff1744;
+  background:#fff1f0;
+  border-left:5px solid #d32f2f;
   padding:18px;
   margin:28px 0;
-  color:#ffcdd2;
+  color:#7a1c1c;
 }
+
+.source{
+  background:#fff8e1;
+  border-left:5px solid #ffca28;
+  padding:14px 18px;
+  margin:22px 0;
+  font-size:14px;
+}
+
 footer{
   text-align:center;
   padding:24px;
   font-size:13px;
-  opacity:.7;
-  border-top:1px solid #222;
+  opacity:.8;
+  border-top:1px solid #e0c97a;
   margin-top:56px;
+}
+
 }
 </style>
 </head>
@@ -79,7 +99,14 @@ footer{
 
 <div class="container">
 <h2>1. Các chỉ số đo lường quan trọng trên YouTube</h2>
-<p>YouTube đánh giá mức độ hiệu quả của một video thông qua 3 nhóm chỉ số chính:</p>
+<p>
+  YouTube đánh giá mức độ hiệu quả của một video thông qua 3 nhóm chỉ số chính:
+  <a href="https://developers.google.com/youtube/analytics/metrics?hl=vi"
+     target="_blank"
+     rel="nofollow noopener noreferrer">
+    (Nguồn: YouTube Analytics and Reporting APIs)
+  </a>
+</p>
 
 <ul>
   <li><strong>Attraction – Thu hút:</strong>
@@ -151,7 +178,31 @@ tuy nhiên lượt xem sẽ phụ thuộc vào các yếu tố sau:
   <li>Mở <strong>nhiều cửa sổ hoặc nhiều tab</strong> và xem video đồng thời.</li>
   <li>Làm mới trang liên tục (nhấn <strong>F5</strong>) khi chưa xem đủ 30 giây.</li>
 </ul>
-
+<div class="source">
+  <p><strong>Nguồn tham khảo chính thống:</strong></p>
+  <ul>
+    <li>
+      Theo <strong>tubics</strong> – nền tảng tư vấn & blog chuyên về
+      <strong>YouTube SEO và YouTube Marketing</strong>
+      (tubics YouTube Optimization):
+      <br>
+      <a href="https://www.tubics.com/blog/what-counts-as-a-view-on-youtube"
+         target="_blank"
+         rel="nofollow noopener noreferrer">
+        How Does YouTube Count Views?
+      </a>
+    </li>
+    <li>
+      Theo <strong>Google YouTube Help</strong> – Trung tâm trợ giúp chính thức của YouTube:
+      <br>
+      <a href="https://support.google.com/youtube/answer/2375431?hl=en#zippy=%2Cvideo-played-to-metrics"
+         target="_blank"
+         rel="nofollow noopener noreferrer">
+        Video played to metrics – How YouTube counts views
+      </a>
+    </li>
+  </ul>
+</div>
 <div class="warning">
 <strong>Lưu ý:</strong>  
 Việc sử dụng nhiều thiết bị để xem cùng một video hoặc phát cùng một video trong nhiều cửa sổ,
@@ -161,8 +212,19 @@ và có nguy cơ không được YouTube ghi nhận.
 
 
 <h2>4. Tại sao luôn nhắc đến việc thay đổi địa chỉ IP?</h2>
+
 <p>Sai lầm trước đây: Nhiều tài khoản google nghe = nhiều view, liệu liên quan gì tới IP và IP là mỗi thiết bị 1 IP hay nhiều IP</p>
-<p>IP chính là giao thức Internet, cung cấp danh tính của các thiết bị được kết nối mạng. Tức là bạn sài nhiều thiết bị nhưng chung một mạng wifi → đều cùng địa chỉ IP</p>
+
+<p>
+IP chính là giao thức Internet, cung cấp danh tính của các thiết bị được kết nối mạng. 
+Tức là bạn sài nhiều thiết bị nhưng chung một mạng wifi → đều cùng địa chỉ IP
+</p>
+
+<div style="text-align: center; margin: 20px 0;">
+  <img src="anhminhhoaip.jpg"
+       alt="Hai thiết bị dùng chung WiFi sẽ có cùng địa chỉ IP khi truy cập YouTube"
+       style="max-width: 100%; height: auto; border-radius: 8px;">
+</div>
 
 <div class="note">
 Ví dụ điển hình về cùng IP: Khi bạn sài chung 1 wifi cho 2 máy<br>
@@ -171,10 +233,29 @@ Ví dụ điển hình về cùng IP: Khi bạn sài chung 1 wifi cho 2 máy<br>
 + Ra YouTube: Cả 2 đều là: 113.160.45.123 → cùng địa chỉ IP
 </div>
 
-<p>Khi nhiều thiết bị dùng chung một mạng WiFi, YouTube sẽ nhận diện là cùng một IP, có thể hiểu là đang ở trong cùng gia đình hoặc cùng một địa điểm như quán cà phê. Tuy nhiên, miễn là không có quá nhiều tài khoản cùng thực hiện hành động này thì vẫn ổn.</p>
+<p>
+Khi nhiều thiết bị dùng chung một mạng WiFi, YouTube sẽ nhận diện là cùng một IP, có thể hiểu là đang ở trong cùng gia đình hoặc cùng một địa điểm như quán cà phê. Tuy nhiên, miễn là không có quá nhiều tài khoản cùng thực hiện hành động này thì vẫn ổn.
+</p>
 
-<p><strong>Cách nhận dạng lượt xem hiệu quả nhất, không bị đứng view, lọc ảo:</strong> 1 thiết bị / 1 tài khoản / 1 wifi ( địa chỉ mạng )</p>
-<p>→ Vì vậy, đừng mắc sai lầm khi nghĩ rằng chỉ cần nhờ bạn bè hoặc thành viên nhóm xem video của bạn nhiều lần, xài 1 thiết bị mở vô số tab, đăng nhập nhiều tài khoản google là được, <strong>TUYỆT ĐỐI KHÔNG THỂ.</strong></p>
+<p>
+<strong>Cách nhận dạng lượt xem hiệu quả nhất, không bị đứng view, lọc ảo:</strong>
+1 thiết bị / 1 tài khoản / 1 wifi ( địa chỉ mạng )
+</p>
+<p>
+→ Vì vậy, đừng mắc sai lầm khi nghĩ rằng chỉ cần nhờ bạn bè hoặc thành viên nhóm xem video của bạn nhiều lần, xài 1 thiết bị mở vô số tab, đăng nhập nhiều tài khoản google là được,
+<strong>TUYỆT ĐỐI KHÔNG THỂ.</strong>
+</p>
+<p class="source">
+  <strong>Nguồn tham khảo:</strong><br>
+  Thông tin về địa chỉ IP theo
+  <strong>Encyclopædia Britannica</strong> – Bách khoa toàn thư uy tín:
+  <br>
+  <a href="https://www.britannica.com/technology/IP-address"
+     target="_blank"
+     rel="nofollow noopener noreferrer">
+    What is an IP address? – Encyclopædia Britannica
+  </a>
+</p>
 
 <h2>5. Stream như thế nào là hiệu quả?</h2>
 
@@ -192,7 +273,7 @@ Các hành động trên đều có nguy cơ cao bị YouTube đánh giá là <s
 và không ghi nhận lượt xem.
 </div>
 
-<h2>5.1 Cách stream như một người xem thật, hạn chế bị đánh bot</h2>
+<h3>5.1 Cách stream như một người xem thật, hạn chế bị đánh bot</h3>
 <ul>
   <li>
     Tìm kiếm bằng nhiều cách khác nhau như:
@@ -230,8 +311,37 @@ và không ghi nhận lượt xem.
   <li>
     Không tắt tiếng web:
     <ul>
-      <li>Điện thoại / PC: khoảng 70% âm lượng loa ngoài.</li>
-      <li>Khi dùng tai nghe: khoảng 50% âm lượng.</li>
+      <li>
+  Không tắt tiếng web:
+  <ul>
+    <li>Điện thoại / PC: khoảng 70% âm lượng loa ngoài.</li>
+    <li>Khi dùng tai nghe: khoảng 50% âm lượng.</li>
+  </ul>
+
+  <div style="text-align: center; margin: 16px 0;">
+    <img src="anhminhhoaamluong.jpg"
+         alt="Minh họa bật âm lượng khi stream YouTube"
+         style="max-width: 100%; height: auto; border-radius: 8px;">
+    <p style="font-size: 14px; color: #666; margin-top: 6px;">
+      Minh họa cách bật âm lượng khi stream để tạo hành vi giống người xem thật
+    </p>
+  </div>
+
+  <p style="font-size: 15px;">
+    Tuy nhiên, với <strong>PC</strong> bạn có thể bật âm lượng YouTube ở mức cao,
+    sau đó <strong>tắt tiếng thiết bị</strong> (mute loa hệ thống).
+    <br>
+    Với <strong>điện thoại</strong>, có thể cắm tai nghe, bật âm lượng phù hợp rồi để đó.
+    <br><br>
+    <em>
+      Âm lượng khuyến cáo chỉ nên nghe <strong>dưới 70 dB</strong>,
+      theo quy tắc <strong>60/60</strong>
+      (không quá 60% âm lượng trong 60 phút).
+      Nếu nghe lâu, nên giảm âm lượng xuống để bảo vệ thính giác.
+    </em>
+  </p>
+</li>
+
     </ul>
   </li>
   <li>Không comment liên tục hoặc spam icon.</li>
@@ -248,7 +358,7 @@ làm giảm lượt tìm kiếm và khả năng tiếp cận.
 vừa đẩy mạnh truyền thông, vừa tạo sự tò mò cho người xem.
 </div>
 
-<h2>5.2 Cách stream team / FC / đẩy view nhanh</h2>
+<h3>5.2 Cách stream team / FC / đẩy view nhanh</h3>
 
 <ul>
   <li>
@@ -268,14 +378,103 @@ vừa đẩy mạnh truyền thông, vừa tạo sự tò mò cho người xem.
   <li>
     Sau khoảng <strong>1 tiếng stream</strong>,
     xóa toàn bộ lịch sử xem và dữ liệu trình duyệt đã sử dụng,
-    rồi tiếp tục stream lại từ đầu.
+    rồi tiếp tục stream lại từ đầu.( có thể đổi sang trình duyệt khác ) 
   </li>
 </ul>
 
-</div>
+
+<h2>6. Một số câu hỏi thường gặp</h2>
+
+<h3>6.1 Số lượng tab tối đa khi stream YouTube bằng nhiều tài khoản là bao nhiêu?</h3>
+<p>
+  YouTube không công bố con số cụ thể về số lượng tab hay trình duyệt được phép sử dụng.
+  Nền tảng này đánh giá lượt xem dựa trên hành vi người dùng tự nhiên,
+  không dựa vào số tab hay số trình duyệt đang mở.
+</p>
+<p>
+  Việc mở nhiều trình duyệt khác nhau (Chrome, Edge, Firefox, Cốc Cốc…)
+  và mỗi trình duyệt chỉ mở một video xem
+  <strong>không được YouTube xác nhận là phương pháp tăng lượt xem hợp lệ</strong>.
+  Các lượt xem lặp lại từ cùng môi trường truy cập
+  có thể bị hệ thống lọc là traffic không tự nhiên.
+</p>
+
+<p class="source">
+  Nguồn:
+  <a href="https://support.google.com/youtube/answer/3399767"
+     target="_blank" rel="nofollow noopener noreferrer">
+     YouTube Help – Fake engagement policy
+  </a>
+</p>
+
+<hr>
+
+<h3>6.2 Âm lượng nghe khi stream nên để bao nhiêu? Có thể tắt âm thanh thiết bị không?</h3>
+<p>
+  Theo khuyến cáo của Tổ chức Y tế Thế giới (WHO),
+  mức âm lượng an toàn khi nghe bằng tai nghe hoặc loa cá nhân
+  nên duy trì khoảng <strong>60% âm lượng thiết bị (tương đương ~70–80 dB)</strong>.
+</p>
+<p>
+  Việc nghe âm thanh ở mức cao hơn (trên 85 dB) trong thời gian dài
+  có thể gây ảnh hưởng đến thính giác.
+  Do đó, người dùng nên ưu tiên bảo vệ tai khi xem hoặc stream nội dung trên YouTube.
+</p>
+
+<p class="source">
+  Nguồn:
+  <a href="https://www.who.int/news-room/questions-and-answers/item/deafness-and-hearing-loss-safe-listening"
+     target="_blank" rel="nofollow noopener noreferrer">
+     World Health Organization – Safe listening
+  </a>
+</p>
+
+<hr>
+
+<h3>6.3 Trong lúc stream nên làm gì?</h3>
+<p>
+  YouTube ưu tiên các hành vi tương tác tự nhiên của người xem,
+  bao gồm xem nội dung, thể hiện cảm xúc và tham gia thảo luận một cách lành mạnh.
+</p>
+<p>
+  Tuy nhiên, các hành vi như spam bình luận,
+  lặp lại nội dung giống nhau hoặc tranh cãi tiêu cực
+  có thể bị hệ thống đánh giá là tương tác không chất lượng,
+  ảnh hưởng đến chỉ số Reaction của video.
+</p>
+
+<p class="source">
+  Nguồn:
+  <a href="https://support.google.com/youtube/answer/2991785"
+     target="_blank" rel="nofollow noopener noreferrer">
+     YouTube Help – How engagement metrics are counted
+  </a>
+</p>
+
+<hr>
+
+<h3>6.4 Có nên sử dụng playlist để stream YouTube không? Playlist có được tính view không?</h3>
+<p>
+  YouTube có ghi nhận lượt xem đến từ playlist.
+  Tuy nhiên, lượt xem từ playlist vẫn phải đáp ứng các tiêu chí
+  về hành vi người dùng thật và thời gian xem tối thiểu
+  thì mới được tính là hợp lệ.
+</p>
+<p>
+  Ngoài ra, YouTube có cơ chế kiểm tra và xác thực lượt xem
+  để đảm bảo số liệu phản ánh chính xác mức độ quan tâm thực tế của người xem.
+</p>
+
+<p class="source">
+  Nguồn:
+  <a href="https://blog.youtube/news-and-events/keeping-youtube-views-authentic/"
+     target="_blank" rel="nofollow noopener noreferrer">
+     YouTube Official Blog – Keeping YouTube Views Authentic
+  </a>
+</p>
 
 <footer>
-© TEAM BOT • ONLY CAPTAIN BOY
+© NHỮNG CON BOT CỦA CAPTAIN BOY • ONLY CAPTAIN BOY • BẢN QUYỀN THUỘC TEAM BOT VUI LÒNG KHÔNG COPPY HAY MANG ĐI BẤT KÌ ĐÂU
 </footer>
 
 </body>
